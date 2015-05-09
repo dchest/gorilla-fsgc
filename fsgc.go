@@ -13,7 +13,7 @@
 //
 //   path := "/path/to/sessions/"
 //   store := sessions.NewFilesystemStore(path, []byte("secret"))
-//   gc := fsgc.New(path).MaxAge(12 * time.Hour).Interval(30 * Minutes)
+//   gc := fsgc.New(path).MaxAge(12 * time.Hour).Interval(30 * time.Minute)
 //   gc.Start()
 //   //
 //   // Every 30 minutes gc will remove any sessions files older than 12 hours
